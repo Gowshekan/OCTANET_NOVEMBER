@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Buy - Ecommerce Site</title>
+    <style>
+        body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+top {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-btn, #register-btn {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-btn:hover, #register-btn:hover {
+    background-color: #3e8e41;
+}
+
+#product-listing {
+    padding: 20px;
+}
+
+#product-listing ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-listing li {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+#product-listing img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#categories {
+    padding: 20px;
+}
+
+#categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#categories li {
+    margin: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+#categories button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#categories button img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 70%;
+}
+
+#categories button p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    
+    </style>
+</head>
+<body style="width: 100%; height: 100%;">
+    <main style="width: 100%; min-height: 100vh;">
+        <top style="width: 100%; min-height: 60vh; background-image: url('https://wallpaperaccess.com/full/159160.png'); background-size: cover; background-position: center;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="https://i.ibb.co/6nDWVxT/M-1.png" alt="MoneyBuy Logo" style="width: 50px; height: 50px; cursor: pointer;" onclick="location.reload()">
+                <h1 style="margin-left: 10px;">Easy Buy</h1>
+                <p style="margin-left: 10px; font-size: 18px;">Your Style, Your Way</p>
+            </div>
+            <nav>
+                <a href="#" id="login-btn">Login</a>
+                <a href="#" id="register-btn">Register</a>
+            </nav>
+        </top>
+        <section id="product-listing">
+            <h2>Product Listing</h2>
+            <ul>
+                <li>
+                    <img src="https://i.ibb.co/sJQ4JzV/Casuals.png" alt="SALE FLAT 70 % OFF on Casuals">
+                    <p>SALE FLAT 70 % OFF on Casual's </p>
+                </li>
+                <li>
+                    <img src="https://i.ibb.co/qkPnFTj/Shoes.png" alt="SALE FLAT 50 % OFF on Shoes">
+                    <p>SALE FLAT 50 % OFF on Shoes</p>
+                </li>
+                <li>
+                    <img src="https://i.ibb.co/X7dch6F/Traditional.png" alt="SALE FLAT 70 % OFF on Traditionals">
+                    <p>SALE FLAT 60 % OFF on Traditionals's</p>
+                </li>
+                <li>
+                    <img src="https://i.ibb.co/jMQPySg/Work-Wear.png" alt="SALE FLAT 70 % OFF on Work wear's">
+                    <p>SALE FLAT 40-80 % OFF on Work wear's</p>
+                </li>    
+                    
+            
+            </ul>
+        </section>
+        <section id="categories">
+            <h2>Shop by Brands</h2>
+            <ul>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/DghLJK4/Levi.png" alt="Levis Logo">
+                        <p>Levis</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/GnQMtrq/Puma.png" alt="Puma Logo">
+                        <p>Puma</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/QHQQdg4/Adidas.png" alt="Adidas Logo">
+                        <p>Adidas</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/Xpfc4f1/Fila.jpg" alt="Fila Logo">
+                        <p>Fila</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/JmY6LJf/Under-Armour.jpg" alt="Under Armour Logo">
+                        <p>Under Armour</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/59R3Mby/mAX.png" alt="Max Logo">
+                        <p>Max</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/DkQ69qH/aRROW.png" alt="Arrow Logo">
+                        <p>Arrow</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/d7xMBp8/pngwing-com.jpg" alt="US Polo Logo">
+                        <p>US Polo</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="https://i.ibb.co/JmY6LJf/Under-Armour.jpg" alt="Under Armour Logo">
+                        <p>Under Armour Women</p>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // Add event listeners to login and register buttons
+document.getElementById('login-btn').addEventListener('click', function() {
+    // Add login functionality here
+    console.log('Login button clicked');
+});
+
+document.getElementById('register-btn').addEventListener('click', function() {
+    // Add register functionality here
+    console.log('Register button clicked');
+});
+
+// Add event listeners to category buttons
+document.querySelectorAll('#categories button').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Add category functionality here
+        console.log('Category button clicked');
+    });
+});
+    </script>
+</body>
+</html>
